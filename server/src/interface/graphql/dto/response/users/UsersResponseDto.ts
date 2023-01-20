@@ -1,7 +1,7 @@
-import { Field, InputType } from '@nestjs/graphql';
+import { Field, ObjectType } from '@nestjs/graphql';
 
-@InputType()
-export default class UsersRequestDto {
+@ObjectType()
+export default class UsersResponseDto {
   @Field(() => String, {
     description: '로그인 아이디',
     nullable: false,
